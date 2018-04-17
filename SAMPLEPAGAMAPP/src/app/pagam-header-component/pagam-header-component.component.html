@@ -1,0 +1,36 @@
+<div  class=logo>
+    <div align="center">
+<img   id="bancasellalogo" src="assets/images/BSEPositivoTrasparente.jpg" >
+    </div>
+<div align="right">
+      <label  id=lang>Languages</label>
+     <!-- <select [ngModel]="selectedDeviceObj" (ngModelChange)="onChangeObj($event)" name="tamil">
+          <option [ngValue]="i" *ngfor = "let i of buyerdetails">{{i.language}}</option>
+      </select>
+      {{selectedDeviceObj |json}}-->
+      <select (change)="onChange($event.target.value)">
+          <option *ngFor="let i of buyerdetails">{{i.language}}</option>option>
+                </select>
+
+
+                <div class="container">
+                    <h4>Translate: Hello World</h4>
+                    <div class="btn-group">
+                      <button *ngFor="let lang of supportedLangs"
+                        (click)="selectLang(lang.value)"
+                        class="btn btn-default" [class.btn-primary]="isCurrentLang(lang.value)">
+                        {{ lang.display }}
+                      </button>
+                    </div>
+                    <div style="margin-top: 20px">
+                      <p>
+                        Translate With Pipe: <strong>{{ 'hello world' | translate }}</strong>
+                      </p>
+                      <p>
+                        Translate with Service: <strong>{{ translatedText }}</strong>
+                      </p>
+                    </div>
+                  </div>        
+               
+    </div>
+</div>

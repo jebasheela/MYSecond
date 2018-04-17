@@ -1,0 +1,9 @@
+div{
+    border: solid 2px blue;
+    margin-left: 240px;
+}
+#privacy{
+    text-align: center;
+    font-size : 20px;
+    font-weight: bold;
+}

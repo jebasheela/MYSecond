@@ -1,0 +1,9 @@
+<!--component html goes here -->
+
+<br>
+<label> Buyer Name </label><input name ="txtname" /> 
+<br>
+<label> Card Number </label> <input name="txtcard" [(ngModel)]="cardHolder.buyername"/> 
+<br>
+<label> Card Number </label> {{cardHolder.buyername}}
+<button (click)="onClick(cardHolder.buyername)" > submit </button>

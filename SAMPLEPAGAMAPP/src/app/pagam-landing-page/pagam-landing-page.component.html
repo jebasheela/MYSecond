@@ -1,0 +1,18 @@
+<div align="top" class="maindiv">
+   <!-- <div>
+<img id="amzp" src="assets/images/amzpay.png" >
+    </div><div>
+ <img id="paypal" src="assets/images/paypal.png" >
+    </div>-->
+    <div *ngFor="let item of paymentsList" class="divalign">
+        <div >
+    <img class="paymentsLogo thumbnail"  src="{{item.path}}" (click)="PassMe(item.paymetNme)"/><br></div> 
+</div>
+</div>
+<h3 class="title">Angular 2 Router Example</h3>
+<nav [ngClass] = "'menu'">
+    <a routerLink="/home" routerLinkActive="active-link">Home</a> | 
+    <a routerLink="/add-book" routerLinkActive="active-link">Add Book</a> | 
+    <a routerLink="/manage-book" routerLinkActive="active-link">Manage Book</a>
+ </nav>   
+ <router-outlet></router-outlet>	

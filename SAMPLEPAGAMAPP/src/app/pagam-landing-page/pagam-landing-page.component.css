@@ -1,0 +1,28 @@
+.paymentsLogo{
+    height: 150px;
+    width:20%;
+}
+.divalign
+{
+   width: 10%;
+   float: center;
+   height:140px ; 
+   margin: 5%;
+}
+.maindiv
+{
+    float: center;
+    margin-left: 242px;
+}
+.thumbnail:hover {
+    border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #658E15 #fff;
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
